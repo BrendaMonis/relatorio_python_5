@@ -19,3 +19,19 @@ print(mySet2)
  #A primeira consiste na visualização das letras que aparecem no set sem que haja a sua repetição.  
  #Já a segunda toda a sequência de nucleotídeos serão levadas em consideração. 
  #Dessa forma, a maneira que um código é escrito é importante e deve ser levado em consideração para a resolução do problema 
+
+ #Posteriormente, pretende-se encontrar a interseção, diferença, união e diferença simbólica entre estes dois conjuntos
+Set_A = set(['3', '14', '15', '9', '26', '5', '35', '9'])
+Set_B = set(['60', '22', '14', '0', '9'])
+
+ #Imprimindo a interseção
+print(Set_A & Set_B)
+
+ #Imprimindo a diferença
+print(Set_A - Set_B)
+
+ #Imprimindo a união
+print(Set_A | Set_B)
+
+ #Imprimindo a symmetric diference
+print(Set_A ^ Set_B)
