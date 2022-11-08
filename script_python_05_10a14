@@ -1,0 +1,21 @@
+#!/usr/bin/env python3
+
+import sys
+
+#Para que seja possível visualizar os comandos é necessário mudar as permissões de um arquivo ou pasta no terminal
+#Para isso, basta rodar o seguinte comando: chmod +x relatório_python_05_02.py
+#Após isso, é necessário adicionar o comando: ./relatório_python_05_02.py
+
+#Primeiramente, deseja-se criar uma set utilizando duas diferentes sintaxes e visualizar suas possíveis diferenças 
+
+ #Criando set com diferentes sintaxes
+mySet = set('ATGTGGG')
+mySet2 = {'ATGCCT'}
+
+ #Imprimindo as diferente sintaxes
+print(mySet) 
+print(mySet2) 
+
+ #A primeira consiste na visualização das letras que aparecem no set sem que haja a sua repetição.  
+ #Já a segunda toda a sequência de nucleotídeos serão levadas em consideração. 
+ #Dessa forma, a maneira que um código é escrito é importante e deve ser levado em consideração para a resolução do problema 
