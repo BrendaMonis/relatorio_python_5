@@ -35,3 +35,7 @@ print(Set_A | Set_B)
 
  #Imprimindo a symmetric diference
 print(Set_A ^ Set_B)
+
+#Criando um conjunto (set) utilizando uma sequência de DNA
+Seq_DNA_set = set('GATGGGATTGGGGTTTTCCCCTCCCATGTGCTCAAGACTGGCGCTAAAAGTTTTGAGCTTCTCAAAAGTCTAGAGCCACCGTCCAGGGAGCAGGTAGCTGCTGGGCTCCGGGGACACTTTGC>
+print(Seq_DNA_set) #Como resultado irá aparecer apenas uma letra do nucleotídeo que se repete , ou seja, ['A', 'C', 'T', 'G']
