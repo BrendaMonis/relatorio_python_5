@@ -1,0 +1,73 @@
+#!/usr/bin/env python3
+
+import sys
+
+#Para que seja possível visualizar os comandos é necessário mudar as permissões de um arquivo ou pasta no terminal
+#Para isso, basta rodar o seguinte comando: chmod +x relatório_python_05.py
+#Após isso, é necessário adicionar o comando: ./relatório_python_05.py
+
+#Primeiramente, deseja-se construir um  dicionário das minhas coisas favoritas
+ #Dicionário com as minhas coisas favoritas
+fav_dict = {
+             'animal' : 'cat',
+             'book' : 'The Miracle Morning', 
+             'color' : 'blue',
+             'tree' : 'flamboyant'
+           }
+
+print(fav_dict, 'this is a dictionary with my favorite things')
+
+#Em seguida, pretende-se imprimir o meu livro favorito que está no dicionário e, após isso, utilizar uma nova variável para a sua impressão
+
+ #Impressão do meu livro favorito
+print('My favorite book is:', fav_dict['book'])
+
+ #Impressão do meu livro favorito utilizando uma váriavel na chave
+fav_things = 'book'
+print('My favorite book is:', fav_dict[fav_things], '(again)')
+
+#Posteriormente, pede-se para imprimir a minha árvore favorita que está no dicionário
+ #Impressão da minha árvore favorita
+print('My favorite tree is:', fav_dict['tree'])
+
+#Além disso, deseja-se acrescentar um novo item ao dicionário e, em seguida, atribuí-lo como o novo valor do fav_thing
+
+ #Acrescentando meu orgão/organismo favorito ao dicionário
+fav_dict['organism'] = 'brain'
+print(fav_dict, 'this is my new dictionary with my favorite things')
+print('My favorite organism is:', fav_dict['organism'])
+
+
+ #Atribuindo 'organism' como o novo valor do fav_thing
+fav_thing = 'organism'
+print(fav_dict[fav_thing], 'is the new value of fav_thing')
+
+#Atribuindo um novo valor ao meu organismo favorito 
+new_organism = sys.argv[1]
+fav_dict['organism'] = new_organism
+print(fav_dict, 'this is my new dictionary with my favorite things')
+print('My new favorite organism is:', fav_dict['organism'])
+
+#Ademais, pretende-se adicionar um novo valor ao fav_things através da linha de comando e imprimi-lo
+
+ #Adicionando um novo valor ao fav_thing
+thing = input('Enter your input: ')
+fav_thing = thing
+
+ #Imprimindo seu novo valor
+print('A value for the thing is :', thing)
+print('A new value for the fav_thing is :', fav_thing, ',so is the same that thing'
+
+#Em seguida, deseja-se obter o fav_dict da linha de comando e um novo valor que deverá ser introduzido pelo usuário.
+new_thing = sys.argv[2]
+print('The new_thing is: {}'.format(new_thing))
+new_favorite = input('The new_favorite is your input: ')
+
+fav_dict [new_thing] = new_favorite
+
+for every_thing in fav_dict:
+        print (every_thing, "\t", fav_dict[every_thing])
+      
+#Após isso, a for loop será utilizada para imprimir novas chaves e valores ao dicionário
+for key, value in fav_dict.items():
+        print ('my {} favorite  is {}'.format(key, value))
