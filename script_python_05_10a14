@@ -55,7 +55,17 @@ for nucleot in sorted(Set_Seq_nucleot):
         print (nucleot, count_nucleot_02)
 
 #Armazene cada contagem em um dicionário
+Adenine = {'A' : count_nucleot['A']}
+print(Adenine)
 
+Timine = {'T' : count_nucleot['T']}
+print(Timine)
+
+Guanine = {'G' : count_nucleot['G']}
+print(Guanine)
+
+Citosine = {'C' : count_nucleot['C']}
+print(Citosine)
 
 
 #Conte GC e AT
