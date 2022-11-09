@@ -39,3 +39,28 @@ print(Set_A ^ Set_B)
 #Criando um conjunto (set) utilizando uma sequência de DNA
 Seq_DNA_set = set('GATGGGATTGGGGTTTTCCCCTCCCATGTGCTCAAGACTGGCGCTAAAAGTTTTGAGCTTCTCAAAAGTCTAGAGCCACCGTCCAGGGAGCAGGTAGCTGCTGGGCTCCGGGGACACTTTGC>
 print(Seq_DNA_set) #Como resultado irá aparecer apenas uma letra do nucleotídeo que se repete , ou seja, ['A', 'C', 'T', 'G']
+
+#Escrevendo um script que:
+
+ #Determine os caracteres únicos desta sequência
+Seq_nucleot = list('GAACTCCAAAAATGAAAACATAGTAGCAATCAAAGCATCCCACTATTTTTTGTCTCTCGTTTCATTAGCGTTGTAAATTACTGATACCCTACTATACCTCTACAAGGCCTTTGTCATCTTT>
+Set_Seq_nucleot = set(Seq_nucleot)
+
+ #Conte os caracteres da sequência e armazenar em um dicionário
+count_nucleot = {}
+
+for nucleot in sorted(Set_Seq_nucleot):
+        count_nucleot_02 = Seq_nucleot.count(nucleot)
+        count_nucleot[nucleot] = count_nucleot_02
+        print (nucleot, count_nucleot_02)
+
+#Armazene cada contagem em um dicionário
+
+
+
+#Conte GC e AT
+GC = (count_nucleot['G'] + count_nucleot['C'])
+print (GC)
+
+AT = (count_nucleot['A'] + count_nucleot['T'])
+print (AT)
